@@ -1,12 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 
+<audio src="src\sounds\no.wav" id="noAudio"></audio>
+<audio src="src\sounds\yes.wav" id="yesAudio"></audio>
+
 <head>
 	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-	<table><button>Yes</button>
+	<table><button data-playing="false" role="switch" aria-checked="false"><span>Yes</span></button>
 		<button>No</button>
 	</table>
 
