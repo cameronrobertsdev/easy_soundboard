@@ -30,6 +30,10 @@ yesButton.addEventListener("pointerdown", () =>{
 
 noButton.addEventListener("pointerdown", () =>{
 
+    yesButton.dataset.playing = "false";
+    noButton.dataset.playing = "false";
+    
+
     if(audioContext.state === "suspended"){
         audioContext.resume();
     }
